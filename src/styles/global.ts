@@ -24,6 +24,11 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 3rem;
     }
 
+    h3 {
+        font-family: 'Robot', sans-serif;
+        font-weight: 400;
+    }
+
     body, input, textarea, button {
         font-family: 'Robot', sans-serif;
         font-weight: 400;
