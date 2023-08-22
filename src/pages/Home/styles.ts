@@ -67,11 +67,3 @@ export const IconContainer = styled.span<IconContainerProps>`
   background-color: ${(props) => props.theme[ICON_BG_COLOR[props.bgColor]]};
   border-radius: 50%;
 `
-
-export const ProductsSection = styled.section`
-  padding: 5.875rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: flex-start;
-`

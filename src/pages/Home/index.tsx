@@ -1,12 +1,7 @@
-import {
-  HomeContainer,
-  IconContainer,
-  IntroSection,
-  ProductsSection,
-} from './styles'
+import { HomeContainer, IconContainer, IntroSection } from './styles'
 import introImg from '../../assets/intro-img.png'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { ProductCard } from '../../components/ProductCard'
+import { Coffees } from '../../components/Coffees'
 
 export function Home() {
   return (
@@ -47,9 +42,10 @@ export function Home() {
         </div>
         <img src={introImg} alt="" />
       </IntroSection>
-      <ProductsSection>
-        <ProductCard />
-      </ProductsSection>
+
+      <section>
+        <Coffees />
+      </section>
     </HomeContainer>
   )
 }

@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Baloo 2', cursive;
+        font-family: 'Baloo 2', cursive !important;
         line-height: 130%;
         color: ${(props) => props.theme['gray-800']};
     }
@@ -38,4 +38,12 @@ export const GlobalStyle = createGlobalStyle`
     button {
         border-radius: 6px;
     }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
 `
