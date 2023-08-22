@@ -5,6 +5,7 @@ import {
   FooterProductCard,
   MainProductCard,
 } from './styles'
+import { InputAmount } from '../InputAmount'
 
 export function ProductCard() {
   return (
@@ -23,11 +24,7 @@ export function ProductCard() {
         <span>
           R$ <h3> 9,90</h3>
         </span>
-        <div>
-          <span></span>
-          <input type="number" value={1} />
-          <span></span>
-        </div>
+        <InputAmount />
         <button>
           <ShoppingCart width={22} weight="fill" />
         </button>

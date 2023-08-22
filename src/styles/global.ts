@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Baloo 2', cursive !important;
+        font-family: 'Baloo 2', cursive ;
         line-height: 130%;
         color: ${(props) => props.theme['gray-800']};
     }
@@ -25,12 +25,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h3 {
-        font-family: 'Robot', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
 
     body, input, textarea, button {
-        font-family: 'Robot', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1rem;
     }

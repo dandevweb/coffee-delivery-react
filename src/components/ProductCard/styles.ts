@@ -45,6 +45,7 @@ export const MainProductCard = styled.main`
   h3 {
     font-weight: 700;
     font-size: 1.25rem;
+    font-family: 'Baloo 2', cursive;
   }
 
   p {
@@ -72,43 +73,7 @@ export const FooterProductCard = styled.footer`
     h3 {
       font-size: 1.5rem;
       font-weight: 700;
-    }
-  }
-
-  div {
-    display: flex;
-    align-items: center;
-    background-color: ${(props) => props.theme['gray-400']};
-    border-radius: 8px;
-    gap: 0.8rem;
-
-    span:first-child::before,
-    span:last-child::after {
-      content: attr(data-content);
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: ${(props) => props.theme['purple-500']};
-      cursor: pointer;
-      font-size: 1.25rem;
-    }
-
-    span:first-child::before {
-      content: '-';
-    }
-
-    span:last-child::after {
-      content: '+';
-    }
-
-    input {
-      border: 0;
-      border: none;
-      max-width: 1rem;
-      background-color: transparent;
-      text-align: center;
-      line-height: normal;
+      font-family: 'Baloo 2', cursive;
     }
   }
 
