@@ -6,7 +6,7 @@ export const HomeContainer = styled.main`
 `
 
 export const IntroSection = styled.section`
-  padding: 5.875rem 0;
+  padding-bottom: 5.875rem;
   display: grid;
   grid-template-columns: 36rem 1fr;
   gap: 2rem;

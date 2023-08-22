@@ -101,7 +101,7 @@ export function Checkout() {
               <h3>R$ 20,00</h3>
             </div>
 
-            <button type="button">Confirmar pedido</button>
+            <a href="/success">Confirmar pedido</a>
           </DetailsAmount>
         </CheckoutItemsCard>
       </div>

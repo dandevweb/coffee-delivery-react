@@ -4,7 +4,6 @@ export const CheckoutContainer = styled.div`
   display: grid;
   grid-template-columns: 40rem 1fr;
   gap: 2rem;
-  margin-top: 2.5rem;
 `
 
 export const GeneralInformation = styled.div`
@@ -139,7 +138,7 @@ export const DetailsAmount = styled.div`
     }
   }
 
-  button {
+  a {
     all: unset;
     background-color: ${(props) => props.theme['yellow-500']};
     display: flex;
@@ -148,6 +147,7 @@ export const DetailsAmount = styled.div`
     padding: 0.75rem 0.5rem;
     border-radius: 6px;
     margin-top: 1rem;
+    cursor: pointer;
 
     color: ${(props) => props.theme.white};
     font-size: 0.875rem;
