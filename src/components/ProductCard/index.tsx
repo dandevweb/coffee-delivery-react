@@ -1,5 +1,4 @@
 import { ShoppingCart } from 'phosphor-react'
-import expressCoffee from '../../assets/products/express-coffee.png'
 import {
   ContainerProductCard,
   FooterProductCard,
@@ -7,22 +6,35 @@ import {
 } from './styles'
 import { InputAmount } from '../InputAmount'
 
-export function ProductCard() {
+interface ProductProps {
+  id: number
+  types?: Array<string>
+  name: string
+  description: string
+  price: number
+  image: string
+}
+
+export function ProductCard({ product }: { product: ProductProps }) {
   return (
     <ContainerProductCard>
       <header>
         <div>
-          <img src={expressCoffee} alt="Café expresso tradicional" />
-          <p>Tradicional</p>
+          <img src={product.image} alt="{product.name}" />
+          <p>
+            {product.types
+              ? product.types?.map((type) => <span key={type}>{type}</span>)
+              : 'tradicional'}
+          </p>
         </div>
       </header>
       <MainProductCard>
-        <h3>Expresso Tradicional</h3>
-        <p>O tradicional café feito com água quente e grãos moídos</p>
+        <h3>{product.name}</h3>
+        <p>{product.description}</p>
       </MainProductCard>
       <FooterProductCard>
         <span>
-          R$ <h3> 9,90</h3>
+          R$ <h3> {product.price}</h3>
         </span>
         <InputAmount />
         <button>

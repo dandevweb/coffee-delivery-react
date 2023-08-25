@@ -24,13 +24,13 @@ export function Home() {
               <IconContainer bgColor="gray">
                 <Package width={16} weight="fill" />
               </IconContainer>
-              <p>Compra simples e segura</p>
+              <p>Embalagem mantém o café intacto</p>
             </li>
             <li>
               <IconContainer bgColor="yellow">
                 <Timer width={16} weight="fill" />
               </IconContainer>
-              <p>Compra simples e segura</p>
+              <p>O café chega fresquinho até você</p>
             </li>
             <li>
               <IconContainer bgColor="purple">

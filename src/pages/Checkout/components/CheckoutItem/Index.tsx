@@ -3,7 +3,7 @@ import { ItemSingle } from './styles'
 import { InputAmount } from '../../../../components/InputAmount'
 import { useTheme } from 'styled-components'
 
-import coffeeImage from '../../../../assets/products/express-coffee.png'
+import coffeeImage from '../../../../assets/products/tradicional.png'
 
 export function CheckoutItem() {
   const theme = useTheme()

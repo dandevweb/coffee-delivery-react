@@ -16,7 +16,6 @@ export const IntroSection = styled.section`
     padding: 1rem 0;
     color: ${(props) => props.theme['gray-800']};
     font-size: 1.3rem;
-    line-height: 130%;
   }
 
   ul {
@@ -32,6 +31,10 @@ export const IntroSection = styled.section`
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
+      p {
+        white-space: nowrap;
+      }
     }
 
     li span {
@@ -47,6 +50,11 @@ export const IntroSection = styled.section`
 
   img {
     width: 100%;
+  }
+
+  //create responsive layout
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `
 

@@ -15,10 +15,11 @@ export const NavContainer = styled.nav`
 
 export const LocationButton = styled.button`
   display: flex;
-  gap: 0.1rem;
+  align-items: center;
+  gap: 0 0.2rem;
   background-color: ${(props) => props.theme['purple-100']};
   color: ${(props) => props.theme['purple-900']};
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: 0;
 `
 

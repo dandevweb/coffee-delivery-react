@@ -13,7 +13,7 @@ export function Header() {
         <div>
           <LocationButton>
             <MapPin size={22} weight="fill" />
-            <span>Porto Alegre, RS</span>
+            <span>Guararema, SP</span>
           </LocationButton>
           <NavLink to="checkout" title="Checkout">
             <CartButton>
